@@ -1,0 +1,6 @@
+.custome_modules_box {
+    border: 1px solid red;
+    width: calc(100vw - 30vw);
+    margin: 0 auto;
+    height: 99.8vh;
+}

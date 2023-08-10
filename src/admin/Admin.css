@@ -1,0 +1,276 @@
+:root {
+    --primary-light: #8abdff;
+    --primary: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --white: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
+    --admin-bg-color: #bdbfc0e1;
+    --admin-header-bg--color: #b3a7ef;
+    --admin-header-footer-bg--color: #a798f0;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-y: scroll;
+    background: var(--bg--color);
+} */
+
+
+.switch {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(2, -webkit-min-content);
+    grid-template-columns: repeat(2, min-content);
+    grid-gap: 3rem;
+    justify-self: center;
+}
+
+.switch input {
+    display: none;
+}
+
+.switch__1,
+.switch__2 {
+    width: 2.5rem;
+}
+
+.switch__1 label,
+.switch__2 label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 1.3rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    background: rgba(255, 255, 255, 0);
+    position: relative;
+    cursor: pointer;
+    border-radius: 1.6rem;
+}
+
+.switch__1 label::after,
+.switch__2 label::after {
+    content: "";
+    position: absolute;
+    left: 0.1rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--greyDark);
+    transition: all 0.4s ease;
+}
+
+.switch__1 label::before,
+.switch__2 label::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(330deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 100%);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.switch input:checked~label::before {
+    opacity: 1;
+}
+
+.switch input:checked~label::after {
+    left: 57%;
+    background: var(--greyLight-1);
+}
+
+
+
+/* header part  */
+.right_side_content_box {
+    /* border: 1px solid red; */
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 370px;
+    padding: 5px 10px;
+
+}
+
+.right_side_button_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_side_main_content {
+    margin: 5px;
+    height: 80vh;
+    overflow: scroll;
+    padding: 5px 10px;
+
+}
+
+.right_side_main_content::-webkit-scrollbar {
+    display: none;
+}
+
+.recycle_btn,
+.refresh_btn,
+.Add_new_user {
+    padding: 0 10px;
+    border: none;
+    background-color: #C1EAF0;
+}
+
+
+
+.pop_up_window_box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.pop_up_window_main_body {
+    background-color: #fefefe;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+}
+
+
+
+.pop_up_window_header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 8px;
+}
+
+.pop_up_window_footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.pop_up_window_footer button {
+    padding: 2px 10px;
+    border: none;
+    background-color: rgb(205, 101, 101);
+    border-radius: 3px;
+}
+
+.pop_up_window_body {
+    border: 1px solid rebeccapurple;
+    height: 90vh;
+    overflow-y: scroll
+}
+
+.add_user_main_box {
+    margin: 10px;
+}
+
+/* USER PERMISSION BOX  */
+.pop_up_user_permission_content {
+    margin: 10px;
+}
+
+
+/* Admin.js Edit    */
+.admin_page {
+    margin: 5px 10px;
+}
+
+.box_content_show_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.box_content_show_grid div {
+    /* border: 1px solid rgb(0, 255, 187); */
+    height: 120px;
+}
+
+.admin_page_down {
+    /* border: 1px solid rgb(0, 25, 138); */
+    margin-top: 10px;
+    height: 68vh;
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    grid-gap: 10px;
+}
+
+.admin_page_down .admin_page_down_right,
+.admin_page_down .admin_page_down_left {
+    background-color: var(--admin-bg-color);
+}
+
+.box_content_main {
+    background-color: var(--admin-header-bg--color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box_content_main h2 {
+    color: rgb(235, 228, 228);
+}
+
+.box_mor_info {
+    color: white;
+    background-color: var(--admin-header-footer-bg--color);
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+/* active_pack_status */
+.admin_page_down .active_pack_status {
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.active_pack_status_pay_btn {
+    border: none;
+    padding: 4px 20px;
+    background-color: rgb(22, 231, 165);
+    border-radius: 10px;
+}
+
+.admin_page_down div .active_pack_status .progress {
+    background-color: rgb(240, 236, 236);
+}
+
+.admin_page_down div .active_pack_status .progress .progress-bar {
+    background-color: rgb(14, 231, 46);
+}
+
+/* price_details */
+.price_details p {
+    margin-bottom: 2px !important;
+}
+
+
+/* #############################  Insitute Page Design ############################### */
+.background_img_box {
+    /* border: 1px solid red; */
+}
+
+.background_img_box_style {
+    height: 250px;
+    width: 100%;
+}
