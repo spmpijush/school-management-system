@@ -266,11 +266,16 @@
 
 
 /* #############################  Insitute Page Design ############################### */
-.background_img_box {
-    /* border: 1px solid red; */
-}
+
 
 .background_img_box_style {
     height: 250px;
     width: 100%;
+}
+
+.left_side_school_details {
+    border: 1px solid red;
+}
+.right_side_school_details {
+    border: 1px solid red;
 }

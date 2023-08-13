@@ -45,6 +45,73 @@ export default class InsituteDetails extends Component {
                         </div>
                     </div>
                 </div>
+                <div className='row'>
+                    <div className='col-lg-6 col-md-6 col-sm-12 col-12'>
+                        <div className=''>
+                            <div className='left_side_school_details'>
+                                <table className="table table-sm table-responsive-sm">
+
+                                    <tbody>
+                                        <tr>
+                                            <td>Village</td>
+                                            <td>:</td>
+                                            <td>Kailabad</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Village</td>
+                                            <td>:</td>
+                                            <td>Kailabad</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Village</td>
+                                            <td>:</td>
+                                            <td>Kailabad</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Village</td>
+                                            <td>:</td>
+                                            <td>Kailabad</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-lg-6 col-md-6 col-sm-12 col-12'>
+                        <div className=''>
+                            <div className='right_side_school_details'>
+                                <table className="table ed table-sm table-responsive-sm">
+
+
+                                    <tbody>
+                                        <tr>
+                                            <td>Village</td>
+                                            <td>:</td>
+                                            <td>Kailabad</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Village</td>
+                                            <td>:</td>
+                                            <td>Kailabad</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Village</td>
+                                            <td>:</td>
+                                            <td>Kailabad</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Village</td>
+                                            <td>:</td>
+                                            <td>Kailabad</td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
